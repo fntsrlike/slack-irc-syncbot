@@ -16,7 +16,8 @@ var config = {
     },
     // optionals
     floodProtection: true,
-    silent: false // keep the bot quiet
+    silent: false, // keep the bot quiet
+    systemSilent: false
 };
 var slackUsers = {};
 var slackChannels = {};
