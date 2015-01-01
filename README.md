@@ -4,8 +4,8 @@ IRC integration with [slack](http://slack.com).
 
 ## Usage
 
-```javascript
-git clone https://github.com/jimmyhillis/slack-irc-plugin.git
+```bash
+git clone https://github.com/fntsrlike/slack-irc-plugin.git
 cd slack-irc-plugin
 npm install
 ```
