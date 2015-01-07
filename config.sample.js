@@ -6,6 +6,7 @@ var config = {
   token: 'XXXX-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-XXXXXX',
   income_url: 'https://hooks.slack.com/services/XXXXXXXXX/XXXXXXXXX/XXXXXXXXXXXXXXXXXXXXXXXX',
   outcome_token: 'XXXXXXXXXXXXXXXXXXXXXXXX',
+  serverPort: 10080
 };
 
 config.channels = {

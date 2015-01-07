@@ -44,6 +44,8 @@ $ vim config.js
 $ docker restart slackbot
 ```
 
+In addition, if your port is not expose to 10080, remember to modify Dockerfile or use `docker run` with `-p` argument.
+
 ## Configuration
 Explain configuration in config.sample.js with comment.
 ```javascript
@@ -82,6 +84,7 @@ config.users = {
 - `server`: IRC server, default is `irc.freenode.com`
 - `icon_url`: Default ICON for messages from IRC to Slack by url. 48*48 size is better
 - `icon_emoji`: As icon_url but by emoji code. It will override by icon_url
+- `serverPort`: The port of web application to get post request from slack. default is 80
 
 ### Flags
 - `silent`: Set true to stop IRC bot from speaking into the channel
