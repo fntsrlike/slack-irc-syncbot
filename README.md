@@ -72,7 +72,7 @@ config.users = {
 ```
 
 ### Requirements
-- `nick`: IRCbot's nick
+- `nick`: IRCbot's nick, it should be unique on IRC Server
 - `username`: IRC bot's username
 - `token`: Slack's API token
 - `income_url`: From Incoming WebHooks  of Integrations
