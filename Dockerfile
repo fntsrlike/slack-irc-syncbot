@@ -1,11 +1,22 @@
 FROM node:0.10
-MAINTAINER Yuanhsiang Cheng <lyforever62@hotmail.com>
-EXPOSE 10080
+MAINTAINER Ruoshi Ling <fntsrlike@gmail.com>
 
+# Timezone
 RUN cp /usr/share/zoneinfo/Asia/Taipei /etc/localtime
 RUN echo 'Asia/Taipei' > /etc/timezone
 
-ADD . /app
+# Node_modules Cache
+COPY ./package.json /app/package.json
+COPY ./README.md /app/README.md
 WORKDIR /app
-RUN npm install || exit 0
-CMD node config.js
+RUN npm install
+
+# Application
+COPY . /app
+
+# Port
+EXPOSE 80
+
+# Execute
+ENTRYPOINT ["node"]
+CMD ["config.js"]

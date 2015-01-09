@@ -33,18 +33,18 @@ Then build image and run.
 ```shell
 $ docker build --tag="slack-irc-plugin" ./
 ...
-$ docker run -d slack-irc-plugin
+$ docker run -d -P slack-irc-plugin
 ```
 
 If you don't want to rebuild images after editing config file, just use volume to sync config and restart container.
 ```shell
-$ docker run -v $(pwd):/app --name="slackbot" -d slack-irc-plugin:latest
+$ docker run -v $PWD:/app --name="slackbot" -d -P slack-irc-plugin
 $ vim config.js
 ...
 $ docker restart slackbot
 ```
 
-In addition, if your port is not expose to 10080, remember to modify Dockerfile or use `docker run` with `-p` argument.
+In addition, if your want to specify expose port, remember to use `-p` argument replace `-P`
 
 ## Configuration
 Explain configuration in config.sample.js with comment.
