@@ -54,8 +54,8 @@ var config = {
   nick: 'slackbot',
   username: 'slackbot-username',
   token: 'XXXX-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-XXXXXX',
-  income_url: 'https://hooks.slack.com/services/XXXXXXXXX/XXXXXXXXX/XXXXXXXXXXXXXXXXXXXXXXXX',
-  outcome_token: 'XXXXXXXXXXXXXXXXXXXXXXXX',
+  incomeUrl: 'https://hooks.slack.com/services/XXXXXXXXX/XXXXXXXXX/XXXXXXXXXXXXXXXXXXXXXXXX',
+  outcomeToken: 'XXXXXXXXXXXXXXXXXXXXXXXX',
 };
 
 // Channels map
@@ -75,8 +75,8 @@ config.users = {
 - `nick`: IRCbot's nick, it should be unique on IRC Server
 - `username`: IRC bot's username
 - `token`: Slack's API token
-- `income_url`: From Incoming WebHooks  of Integrations
-- `outcome_token`: From Outgoing WebHooks of Integrations
+- `incomeUrl`: From Incoming WebHooks  of Integrations
+- `outcomeToken`: From Outgoing WebHooks of Integrations
 - `channels`: Channels map. Decide to sync which IRC chanel to Slack channel
 - `users`: Users map. Let messages sync from IRC could dislpay usesname of Slack
 
