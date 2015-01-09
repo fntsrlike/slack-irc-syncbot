@@ -25,8 +25,8 @@
     "node": "*"
   },
   "dependencies": {
-    "dns": "^0.2.2",
     "irc": "~0.3.6",
+    "is-online": "^3.0.0",
     "request": "~2.33.0",
     "underscore": "^1.7.0"
   },
