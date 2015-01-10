@@ -1,15 +1,15 @@
 # Slack IRC Syncbot
-Synchronize messages between [Slack](http://slack.com) and IRC.
+Synchronize messages between [Slack](http://slack.com) and [IRC](https://en.wikipedia.org/wiki/Internet_Relay_Chat).
 
 ## Usage
 
 ```bash
-git clone https://github.com/fntsrlike/slack-irc-plugin.git
-cd slack-irc-plugin
+git clone https://github.com/fntsrlike/slack-irc-syncbot.git
+cd slack-irc-syncbot
 npm install
 ```
 
-Write your own configuration file (Refer `config-example.js`) is a good starting point for building your own. The details can refer Configure part in below.
+Write your own configuration file (Refer `config.sample.js`) is a good starting point for building your own. The details can refer Configure part in below.
 
 Save this to a file in the root of the project then run your bot with:
 
@@ -21,8 +21,8 @@ This will launch the bot in your terminal based on provided configuration.
 
 This project also support docker. you can clone the project and configure it. BTW, your config file should be named `config.js`.
 ```shell
-$ git clone https://github.com/fntsrlike/slack-irc-plugin.git
-$ cd slack-irc-plugin
+$ git clone https://github.com/fntsrlike/slack-irc-syncbot.git
+$ cd slack-irc-syncbot
 $ cp config.sample.js config.js
 $ vim config.js
 ...
@@ -30,14 +30,14 @@ $ vim config.js
 
 Then build image and run.
 ```shell
-$ docker build --tag="slack-irc-plugin" ./
+$ docker build --tag="slack-irc-syncbot" ./
 ...
-$ docker run -d -P slack-irc-plugin
+$ docker run -d -P slack-irc-syncbot
 ```
 
 If you don't want to rebuild images after editing config file, just use volume to sync config and restart container.
 ```shell
-$ docker run -v $PWD:/app --name="slackbot" -d -P slack-irc-plugin
+$ docker run -d -P -v $PWD/config.js:/app/config.js --name="slackbot" slack-irc-syncbot
 $ vim config.js
 ...
 $ docker restart slackbot
@@ -84,9 +84,14 @@ config.users = {
 - `icon_url`: Default ICON for messages from IRC to Slack by url. 48*48 size is better
 - `icon_emoji`: As icon_url but by emoji code. It will override by icon_url
 - `serverPort`: The port of web application to get post request from slack. default is 80
+- `initializeTimeoutLimit`: Set seconds to be limit time of initialization.
+- `listUpdatedPeriod`: Set seconds to update user list
 
 ### Flags
 - `silent`: Set true to stop IRC bot from speaking into the channel
-- `systemSilent`: Set true to stop speak any bot's system messages.
+- `systemSilent`: Set true to stop speak any bot's system messages
 - `usersTracking`: Set true to tracking IRC users' nick. Otherwise, user mapping will be turn off.
-- `autoTildeAdded`: Set true to add tilde prefix on IRC nicks.
+- `autoTildeAdded`: Set true to add tilde prefix on IRC nicks
+- `showSlackChannel`: Set true to display channel name of slack on IRC channel
+
+Other config options about IRCBot, can refer [node-irc](https://github.com/martynsmith/node-irc/blob/0.3.x/lib/irc.js)
