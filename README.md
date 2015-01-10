@@ -1,6 +1,5 @@
-# Slack IRC Plugin
-
-IRC integration with [slack](http://slack.com).
+# Slack IRC Syncbot
+Synchronize messages between [Slack](http://slack.com) and IRC.
 
 ## Usage
 
