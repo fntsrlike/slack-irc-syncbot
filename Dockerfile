@@ -9,6 +9,7 @@ RUN echo 'Asia/Taipei' > /etc/timezone
 COPY ./package.json /app/package.json
 COPY ./README.md /app/README.md
 WORKDIR /app
+RUN apt-get update && apt-get install -y libicu-dev
 RUN npm install
 
 # Application
