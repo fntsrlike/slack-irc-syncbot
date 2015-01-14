@@ -1,6 +1,6 @@
 'use strict';
 
-var Slack2IRC = require('./lib/slack2irc').Slack2IRC;
+var App = require('./lib/app');
 
 var config = {
   nick: 'slackbot',
@@ -19,4 +19,4 @@ config.users = {
   'ircLogin (not nick)': 'slackUser'
 };
 
-Slack2IRC( config ).listen();
+App( config ).start();
