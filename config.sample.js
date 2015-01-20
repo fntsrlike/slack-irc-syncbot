@@ -3,20 +3,13 @@
 var App = require('./lib/app');
 
 var config = {
-  nick: 'slackbot',
-  username: 'slackbot-username',
   token: 'XXXX-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-XXXXXX',
   incomeUrl: 'https://hooks.slack.com/services/XXXXXXXXX/XXXXXXXXX/XXXXXXXXXXXXXXXXXXXXXXXX',
   outcomeToken: 'XXXXXXXXXXXXXXXXXXXXXXXX',
-  serverPort: 80
+  serverPort: 10080,
+  minecraftServer: "http://mine.snowtec.org:8123/up/sendmessage"
 };
 
-config.channels = {
-  '#irc-channel password(optional)': '#slack-channel'
-};
-
-config.users = {
-  'ircLogin (not nick)': 'slackUser'
-};
+config.users = {};
 
 App( config ).start();
