@@ -16,7 +16,7 @@ config.channels = {
 };
 
 config.users = {
-  'ircLogin (not nick)': 'slackUser'
+  'ircAccount': 'slackUser'
 };
 
 App( config ).start();
