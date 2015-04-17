@@ -7,7 +7,7 @@ var config = {
   username: 'slackbot-username',
   token: 'XXXX-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-XXXXXX',
   incomeUrl: 'https://hooks.slack.com/services/XXXXXXXXX/XXXXXXXXX/XXXXXXXXXXXXXXXXXXXXXXXX',
-  outgoingToken: 'XXXXXXXXXXXXXXXXXXXXXXXX',
+  outgoingToken: ['XXXXXXXXXXXXXXXXXXXXXXXX'],
   serverPort: 80
 };
 
