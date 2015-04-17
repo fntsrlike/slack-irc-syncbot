@@ -1,8 +1,5 @@
-FROM node:0.10
+FROM fntsrlike/node-irc:latest
 MAINTAINER Ruoshi Ling <fntsrlike@gmail.com>
-
-# Requirment libs
-RUN apt-get update && apt-get install -y libicu-dev
 
 # Node_modules Cache
 COPY ./package.json /app/package.json
