@@ -63,10 +63,10 @@ config.channels = {
 };
 
 // Users map
-// Index is not nick, but username at IRC. It could be get by `/whois`.
+// Index is not nick, but account name at IRC. It could be get by `/whois`.
 // Value is slack's username.
 config.users = {
-  'ircLogin (not nick)': 'slackUser'
+  'ircAccount': 'slackUser'
 };
 ```
 
