@@ -31,7 +31,7 @@
     "url": "git://github.com/fntsrlike/slack-irc-syncbot.git"
   },
   "dependencies": {
-    "irc": "~0.3.11",
+    "irc": ">=0.3.12",
     "is-online": "~3.2.0",
     "request": "~2.33.0",
     "underscore": "~1.8.3"
