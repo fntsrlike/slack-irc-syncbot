@@ -9,7 +9,7 @@ cd slack-irc-syncbot
 npm install
 ```
 
-Write your own configuration file (Refer `config.sample.js`) is a good starting point for building your own. The details can refer Configure part in below.
+Write your own configuration file (Refer `config.js.sample`) is a good starting point for building your own. The details can refer Configure part in below.
 
 Save this to a file in the root of the project then run your bot with:
 
@@ -23,7 +23,7 @@ This project also support docker. you can clone the project and configure it. BT
 ```shell
 $ git clone https://github.com/fntsrlike/slack-irc-syncbot.git
 $ cd slack-irc-syncbot
-$ cp config.sample.js config.js
+$ cp config.js.sample config.js
 $ vim config.js
 ...
 ```
@@ -46,7 +46,7 @@ $ docker restart slackbot
 In addition, if your want to specify expose port, remember to use `-p` argument replace `-P`
 
 ## Configuration
-Explain configuration in config.sample.js with comment.
+Explain configuration in config.js.sample with comment.
 ```javascript
 var config = {
   // Require item
