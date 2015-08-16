@@ -109,6 +109,7 @@ App( config ).start();
 - `iconUrl`: IRC 同步到 Slack 訊息顯示預設頭像的網址。48 * 48 的長寬是比較推薦的。
 - `iconEmoji`: 同上，但是是輸入 emoji code。效果會被 `iconUrl` 覆蓋。
 - `serverPort`: 接收 Slack 訊息用的網頁所使用的 port。預設是 `80` port。
+- `httpsServerPort`: 同上，但是在 https 的連線狀況。預設是 `443` port。
 - `initializeTimeoutLimit`: 設定初始化時，判定超時、失敗的秒數。
 - `listUpdatedPeriod`: 設定定期更新使用者名單的秒數。
 
@@ -120,5 +121,6 @@ App( config ).start();
 - `isShowSlackChannel`: 設成 `true` 讓同步到 Slack 訊息的使用者名稱前加上 IRC Channel 的名稱。預設是 `false`，
 - `isMapName`: 設成 `true` 決定是否開啟暱稱同步的功能。預設為 `true`。
 - `isMapAvatar`:設成 `true` 決定是否開啟頭像同步的功能。預設為 `true`。
+- `isHttpsConnecttion' 設成 `true` 去開啟 https 連線服務。
 
 其他關於程式的設定，可以參考 [node-irc](https://github.com/martynsmith/node-irc/blob/0.3.x/lib/irc.js)。

@@ -107,6 +107,7 @@ App( config ).start();
 - `iconUrl`: Default ICON for messages from IRC to Slack by url. 48*48 size is better
 - `iconEmoji`: As iconUrl but by emoji code. It will override by iconUrl
 - `serverPort`: The port of web application to get post request from slack. default is 80
+- `httpsServerPort`: As `serverPort` but in https connection. default is 443.
 - `initializeTimeoutLimit`: Set seconds to be limit time of initialization.
 - `listUpdatedPeriod`: Set seconds to update user list
 
@@ -118,5 +119,6 @@ App( config ).start();
 - `isShowSlackChannel`: Set true to display channel name of slack on IRC channel
 - `isMapName`: Set true to sync nicks.
 - `isMapAvatar`: Set true to sync avatar
+- `isHttpsConnecttion' Set `true` to turn on https connection.
 
 Other config options about IRCBot, can refer [node-irc](https://github.com/martynsmith/node-irc/blob/0.3.x/lib/irc.js)
