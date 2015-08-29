@@ -91,6 +91,12 @@ config.users = {
   'ircuser': 'slackuser'
 };
 
+// IRC 暱稱黑名單
+config.bannedIRCNicks = [
+  '<IRC 暱稱>',
+  'ircNick'
+];
+
 // -- 到此行結束設定。
 
 App( config ).start();

@@ -19,4 +19,8 @@ config.users = {
   'ircAccount': 'slackUser'
 };
 
+config.bannedIRCNicks = [
+  'ircNick'
+];
+
 App( config ).start();

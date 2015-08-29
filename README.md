@@ -90,6 +90,12 @@ config.users = {
   'ircuser': 'slackuser'
 };
 
+// Baned list of IRC Nicks
+config.bannedIRCNicks = [
+  '<IRC Nick>',
+  'ircNick'
+];
+
 // -- Setting end on this line
 
 App( config ).start();
