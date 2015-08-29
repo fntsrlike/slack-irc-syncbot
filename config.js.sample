@@ -23,4 +23,8 @@ config.bannedIRCNicks = [
   'ircNick'
 ];
 
+config.bannedKeywords = [
+  // 'keyword'
+];
+
 App( config ).start();

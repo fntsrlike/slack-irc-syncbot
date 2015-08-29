@@ -97,6 +97,11 @@ config.bannedIRCNicks = [
   'ircNick'
 ];
 
+// 關鍵字黑名單，擁有以下關鍵字的訊息將會被篩選掉。
+config.bannedKeywords = [
+  'keyword'
+];
+
 // -- 到此行結束設定。
 
 App( config ).start();

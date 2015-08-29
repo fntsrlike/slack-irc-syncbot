@@ -78,7 +78,7 @@ var config = {
   serverPort: 80
 };
 
-// The channels wanna be sync messages. 
+// The channels wanna be sync messages.
 config.channels = {
   '#<IRC channel> [password, option]': '#<Slack channgel>',
   '#sample' : '#general'
@@ -90,10 +90,15 @@ config.users = {
   'ircuser': 'slackuser'
 };
 
-// Baned list of IRC Nicks
+// Baned list of IRC Nicks. Usually are bots.
 config.bannedIRCNicks = [
   '<IRC Nick>',
   'ircNick'
+];
+
+// To filter messages has bad word or dirty word
+config.bannedKeywords = [
+  'keyword'
 ];
 
 // -- Setting end on this line
