@@ -126,5 +126,6 @@ App( config ).start();
 - `isMapName`: Set true to sync nicks.
 - `isMapAvatar`: Set true to sync avatar
 - `isHttpsConnecttion' Set `true` to turn on https connection.
+- `isDisplayInfo' Set true to let index display some public information.
 
 Other config options about IRCBot, can refer [node-irc](https://github.com/martynsmith/node-irc/blob/0.3.x/lib/irc.js)

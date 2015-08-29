@@ -128,5 +128,6 @@ App( config ).start();
 - `isMapName`: 設成 `true` 決定是否開啟暱稱同步的功能。預設為 `true`。
 - `isMapAvatar`:設成 `true` 決定是否開啟頭像同步的功能。預設為 `true`。
 - `isHttpsConnecttion' 設成 `true` 去開啟 https 連線服務。
+- `isDisplayInfo' 設成 `true` 讓首頁顯示可公開資訊。預設為 `true`。
 
 其他關於程式的設定，可以參考 [node-irc](https://github.com/martynsmith/node-irc/blob/0.3.x/lib/irc.js)。
