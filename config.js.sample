@@ -7,7 +7,7 @@ var config = {
   username: 'slackbot-username',
   token: 'XXXX-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-XXXXXX',
   incomeUrl: 'https://hooks.slack.com/services/XXXXXXXXX/XXXXXXXXX/XXXXXXXXXXXXXXXXXXXXXXXX',
-  outgoingToken: 'XXXXXXXXXXXXXXXXXXXXXXXX',
+  outgoingToken: ['XXXXXXXXXXXXXXXXXXXXXXXX'],
   serverPort: 80
 };
 
@@ -16,7 +16,15 @@ config.channels = {
 };
 
 config.users = {
-  'ircLogin (not nick)': 'slackUser'
+  'ircAccount': 'slackUser'
 };
+
+config.bannedIRCNicks = [
+  'ircNick'
+];
+
+config.bannedKeywords = [
+  // 'keyword'
+];
 
 App( config ).start();

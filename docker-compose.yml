@@ -1,0 +1,8 @@
+app:
+  build: ./
+  environment:
+    - TZ=Asia/Taipei
+  volumes:
+    - ./config.js:/app/config.js
+  ports:
+    - "8080:80"
